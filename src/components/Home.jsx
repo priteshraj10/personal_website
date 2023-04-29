@@ -13,7 +13,11 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center">
         <div className="flex flex-col justify-center h-full md:w-1/2 md:pr-10">
-          <span className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left">
+            Hi, I'm Pritesh Raj
+          </h1>
+          <br />
+          <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-center md:text-left">
             <Typewriter
               options={{
                 strings: [
@@ -27,7 +31,7 @@ const Home = () => {
                 delay: 50,
               }}
             />
-          </span>
+          </h2>
 
           <p className="text-base md:text-lg lg:text-xl xl:text-2xl mt-4 text-center md:text-left">
             I have a keen interest in machine learning ML Ops, deep learning,
@@ -53,7 +57,11 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="mx-auto w-1/2 h-auto object-contain rounded-l md:rounded-2xl"
+            className = "mx-auto w-1/2 h-auto object-contain rounded-l md:rounded-2xl"
+            style={{
+              maxHeight: "500px",
+              maxWidth: "300px",
+            }}
           />
         </div>
       </div>
