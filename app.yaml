@@ -1,9 +1,18 @@
 runtime: nodejs
 env: flex
 
-service: default
+service: personal-website
+
+handlers:
+  - url: "/"
+    static_files: build/index.html
+    upload: build/index.html
+
+  - url: "/"
+    static_dir: build
 
 automatic_scaling:
+  target_concurrent_requests: 10
   min_num_instances: 1
   max_num_instances: 2
   cool_down_period_sec: 180
@@ -13,3 +22,15 @@ automatic_scaling:
 env_variables:
   MY_VAR: my_value
   NODE_ENV: production
+
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+readiness_check:
+  path: "/_ah/health"
+  check_interval_sec: 5
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2
