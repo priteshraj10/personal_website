@@ -53,7 +53,7 @@ const Home = () => {
             />
           </h2>
 
-          <p class="text-base md:text-lg lg:text-xl mb-6">
+          <p className="text-base md:text-lg lg:text-xl mb-6">
             I am deeply passionate about machine learning, deep learning,
             computer vision, natural language processing (NLP), and web
             development. I am dedicated to mastering new technologies and

@@ -13,3 +13,16 @@ automatic_scaling:
 env_variables:
   MY_VAR: my_value
   NODE_ENV: production
+
+handlers:
+  - url: /
+    static_files: build/index.html
+    upload: build/index.html
+
+  - url: /(.*)
+    static_files: build/\1
+    upload: build/(.*)
+
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html
