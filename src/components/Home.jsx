@@ -53,10 +53,11 @@ const Home = () => {
             />
           </h2>
 
-          <p className="text-base md:text-lg lg:text-xl mb-6">
-            I have a keen interest in machine learning, deep learning, computer
-            vision, NLP, and web development. I'm passionate about learning new
-            technologies and solving complex problems.
+          <p class="text-base md:text-lg lg:text-xl mb-6">
+            I am deeply passionate about machine learning, deep learning,
+            computer vision, natural language processing (NLP), and web
+            development. I am dedicated to mastering new technologies and
+            tackling intricate challenges.
           </p>
 
           <div className="flex justify-center md:justify-start">
